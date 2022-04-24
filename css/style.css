@@ -1,0 +1,12 @@
+/* Global Layout Set-up*/
+
+
+/*===============================================
+    BASE ELEMENT STYLES
+================================================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
