@@ -10,3 +10,64 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    
+
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: #E0FFFF;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+h3, p {
+    text-align: center;
+    background-color: #E0FFFF;  
+    margin: 0px;
+    padding: 20px 0px 5px 0px; 
+}
+
+.latest_news {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+
+input [type="text"],
+select {
+    margin-bottom: 10px;
+
+}
+
+label {
+    display: block;
+    margin: 20px 0px 5px;
+}
+
+div .newsletter 
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    margin: 20px;
+
+
+}
