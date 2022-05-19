@@ -12,13 +12,15 @@
 }
 
 body {
-    
-
+    display: block;
+    font-family: 'Roboto', sans-serif;
 }
 
 form {
-    margin:auto;
+    margin: auto;
+    
 }
+
 
 h1 {
     text-align: center;
@@ -111,9 +113,15 @@ button {
     width: 100%;
 }
 
+footer {
+    text-align: center;
+    font-style: italic;
+    font-weight: 100px;
+}
 
 @media (min-width:768px){
    form {
+       margin: auto;
       width: 500px;
    }
 }   
