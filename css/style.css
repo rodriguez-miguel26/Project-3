@@ -116,7 +116,7 @@ button {
 footer {
     text-align: center;
     font-style: italic;
-    font-weight: 100px;
+    font-weight: 100;
 }
 
 @media (min-width:768px){
