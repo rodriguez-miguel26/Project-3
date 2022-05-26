@@ -13,8 +13,9 @@
     </head> 
 
         <body>
+            <h1>The Code Review</h1>
+            
             <div class="intro">
-                <h1>The Code Review</h1>
                 <h3>Signup for our newsletter</h3>
                 <p class="latest_news">Get the latest news on how your code is doing right in your inbox</p>
             </div>
@@ -22,9 +23,10 @@
             <form>   
 
                 <fieldset> 
-                    <div class="con">
 
-                        <legend><span class="contact">Contact Information</span></legend>
+                    <legend><span class="contact">Contact Information</span></legend>
+
+                    <div class="con">
                             
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="user_name" placeholder="Required">
@@ -57,20 +59,23 @@
                 <hr>
 
                 <fieldset>
+
+                    <legend><span class="title">Newsletter</span></legend>
+
                     <div class="select">
-                        <legend><span class="title">Newsletter</span></legend>
+
                         <p>Select the newsletter you would like to receive</p>
 
-                        <label for="news">HTML News
+                        <label for="html_news">HTML News
                         <input type="checkbox" id="html_news" name="news">
                         </label>
 
-                        <label for="news">CSS News
+                        <label for="css_news">CSS News
                         <input type="checkbox" id="css_news" name="news">
                         </label>
 
-                        <label for="news">Javascript News
-                        <input type="checkbox" id="javascript_news" name="news">
+                        <label for="js_news">Javascript News
+                        <input type="checkbox" id="js_news" name="news">
                         </label>
 
                         <h4>Newsletter format</h4>
@@ -79,8 +84,8 @@
                         <input type="radio" id="news" value="html" name="format">
                         </label>
 
-                        <label for="news">Plain Text
-                        <input type="radio" id="news" value="plain_text" name="format">
+                        <label for="text_news">Plain Text
+                        <input type="radio" id="text_news" value="plain_text" name="format">
                         </label>
 
                         <label  for="comment">Other topics you'd like to hear about

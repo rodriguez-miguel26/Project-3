@@ -19,11 +19,8 @@ body {
 
 form {
     margin: auto;
-    width: 200px;
-}
+    width: 300px;
 
-#zipcode {
-    width:50%;
 }
 
 h1 {
@@ -38,16 +35,19 @@ h1 {
     text-align: center;
     background-color: #E0FFFF;  
     margin: 0px;
-    padding: 20px 0px 5px 0px; 
-}
-
-
-.latest_news {
-    padding-top: 0px;
+    padding: 5px 0px 5px 0px; 
     padding-bottom: 20px;
     border-bottom-style: double;
     border-color: #36598a;
     border-width: 8px;
+}
+
+h3 {
+    margin: 20px 0px 10px 0px;
+}
+
+#zipcode {
+    width:50%;
 }
 
 fieldset {
@@ -56,18 +56,24 @@ fieldset {
     border-style: none;
 }
 
-.con {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
 legend {
-    margin: 20px 0px;
+    margin: 20px 0px 10px 0px;
     font-size: 20px;
     font-weight: bold;
 }
+
+input[type="text"] ,
+input[type="email"] ,
+input[type="tel"] {
+    padding: 2px 5px;
+}
+
+input::placeholder {
+    font-weight: 100;
+    font-size: .8em;
+    font-style: italic;
+    text-align: right;
+  }
 
 hr {
     border-style: solid;
@@ -75,14 +81,12 @@ hr {
     border-color: #36598a;
 }
 
+
 label {
     display: block;
     margin: 10px 0px;
 }
 
-p{
-   margin: 20px 0px; 
-}  
 
 input[type="checkbox"] {
     margin: 0px 5px;
@@ -117,15 +121,51 @@ input[type="submit"] {
     width: 100%;
 }
 
+
 footer {
     text-align: center;
     font-style: italic;
     font-weight: 100;
 }
 
+
+/*///////FLEX///////////*/
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="checkbox"] {
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+/*//////MEDIA QUERIES////////////*/
+
 @media (min-width:768px){
    form {
         margin: auto;
         width: 500px;
    }
+
+   .con {
+       display: flex;
+       flex-direction: column;
+       width: 500px;
+   }
+
+   #zipcode {
+    width:25%;
+    }
+
 }   
+
