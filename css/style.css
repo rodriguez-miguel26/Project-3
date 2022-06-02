@@ -17,7 +17,6 @@ body {
     width: auto;
 }
 
-
 h1 {
     text-align: center;
     background-color:  #36598a;
@@ -51,16 +50,22 @@ fieldset {
     border-style: none;
 }
 
-legend {
-    margin: 20px 0px 10px 0px;
+.contact, 
+.title {
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 input[type="text"] ,
 input[type="email"] ,
 input[type="tel"] {
     padding: 2px 5px;
+}
+
+input[type="checkbox"] {
+    margin: 0px 5px;
+    vertical-align: middle;
 }
 
 input::placeholder {
@@ -75,11 +80,6 @@ hr {
     border-style: solid;
     border-width: 2px;
     border-color: #36598a;
-}
-
-input[type="checkbox"] {
-    margin: 0px 5px;
-    vertical-align: middle;
 }
 
 h4 {
@@ -120,7 +120,8 @@ footer {
 
 /*///////FLEX///////////*/
 
-.con {
+.con,
+legend {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -131,14 +132,12 @@ footer {
 
 .select {
     display: flex;
+    margin: auto;
     flex-direction: column;
+    width: 350px;
 }
 
-input[type="checkbox"] {
-    flex-direction: row;
-    justify-content: flex-start;
 
-}
 
 /*//////MEDIA QUERIES////////////*/
 
@@ -148,9 +147,11 @@ input[type="checkbox"] {
         width: 500px;
    }
 
-   .con {
+   legend, 
+   .con,
+   .select {
        display: flex;
-       flex-direction: row;
+       flex-direction: column;
        width: 500px;
        margin: auto;
    }
