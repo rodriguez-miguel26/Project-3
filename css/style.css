@@ -44,6 +44,11 @@ h3 {
     width:50%;
 }
 
+input:focus,
+textarea:focus {
+    border-color: #36598a;
+}
+
 fieldset {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -61,6 +66,10 @@ input[type="text"] ,
 input[type="email"] ,
 input[type="tel"] {
     padding: 2px 5px;
+}
+
+label, input {
+    padding: 10px;
 }
 
 input[type="checkbox"] {
@@ -130,6 +139,7 @@ legend {
 
 }
 
+
 .select {
     display: flex;
     margin: auto;
@@ -147,8 +157,14 @@ legend {
         width: 500px;
    }
 
+   .con {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       width: 500px;
+   }
+
    legend, 
-   .con,
    .select {
        display: flex;
        flex-direction: column;
