@@ -45,13 +45,22 @@ h3 {
 }
 
 input:focus,
-textarea:focus {
-    border-color: #36598a;
+textarea:focus, 
+#state:focus {
+    outline: 0;
+    border-width: 2px;
+    border-color: blue;
+}
+
+legend {
+    width: 250px;
+    margin:auto;
 }
 
 fieldset {
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-right: 0;
     border-style: none;
 }
 
@@ -69,7 +78,7 @@ input[type="tel"] {
 }
 
 label, input {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 input[type="checkbox"] {
@@ -129,22 +138,23 @@ footer {
 
 /*///////FLEX///////////*/
 
-.con,
-legend {
+.con {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 350px;
+    width: 250px;
     margin:auto;
-
 }
 
+.con-select {
+    display: flex;
+    flex-direction: column;
+}
 
 .select {
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 350px;
+    width: 250px;
 }
 
 
@@ -158,23 +168,51 @@ legend {
    }
 
    .con {
-       display: flex;
+        display: flex;
+        justify-content: flex-start;
+        margin:auto;
+        width: 500px;
+        padding: 10px;
+        padding-left: 0px;
+    }
+
+   .con-select {
+       display: flex;   
        flex-direction: row;
-       flex-wrap: nowrap;
-       width: 500px;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       padding: 10px 0;
    }
 
-   legend, 
+   .con-select > label {
+    padding: .3em 0;
+    flex: 1;
+  }
+
+  select {
+      flex:2;
+  }
+
+  #zipcode {
+      width: 25%;
+  }
+
+  .con-select > input {
+      flex: 2;
+  }
+  
+   legend {
+        margin: auto;
+        width: 500px;        
+    } 
+
    .select {
        display: flex;
        flex-direction: column;
+       justify-content: flex-start;
        width: 500px;
        margin: auto;
    }
-
-   #zipcode {
-    width:25%;
-    }
 
 }   
 
