@@ -186,15 +186,16 @@ footer {
 
    .con-select > label {
     padding: .3em 0;
-    flex: 1;
+    flex: 2;
   }
 
-  select {
-      flex:2;
+  #state {
+      flex: 2;
   }
 
-  #zipcode {
-      width: 25%;
+  .zip_code {
+    flex: 2;
+    width: 25%;
   }
 
   .con-select > input {
